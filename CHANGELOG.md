@@ -1,5 +1,20 @@
 ﻿# Changelog
 
+## 1.0.1 — 2026-11-25
+
+Release config fix: `verbose_logging` now defaults to **`false`** and the shipped
+`wish_tilt.json` sets it to `false`, so a fresh install does not write a `TILT` line every 0.5° of
+movement. No behaviour change; set it to `true` for the diagnostics described in the README.
+
+Artifacts (built 2026-11-25 21:41):
+
+| file | sha256 |
+|---|---|
+| `Modloader/mods/hf_wish_tilt.dll` (357 376 B) | `3CDF72175116537E382E82336D68F55DF8E64F1A03947D33AADA9276AEE7E926` |
+| `Modloader/config/wish_tilt.json` | `9FAF79A82858E9316785D1FB7AB46B2501BF4262E774C315181CC002DB149F8A` |
+
+31 unit tests.
+
 ## 1.0.0 — 2026-11-25
 
 First public release, MIT © 2026 Duumvir-hf. Feature set as 0.5.0:

@@ -12,5 +12,5 @@
   "m_mdl_at_multiplier": 10.0,
   "level_hold_seconds": 0.5,
   "level_debounce_seconds": 0.5,
-  "verbose_logging": true
+  "verbose_logging": false
 }

@@ -1,6 +1,6 @@
 ﻿[package]
 name = "hf-wish-tilt"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 description = "HighFleet (Steam 1.163): the wish keys move a persistent tilt target and the engine m_mdl_at stabiliser aims at it instead of at level."
 license = "MIT"

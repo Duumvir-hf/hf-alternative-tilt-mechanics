@@ -69,7 +69,7 @@ impl Default for Config {
             m_mdl_at_multiplier: 10.0,
             level_hold_seconds: 0.5,
             level_debounce_seconds: 0.5,
-            verbose_logging: true,
+            verbose_logging: false,
             unknown: Default::default(),
         }
     }
@@ -244,6 +244,7 @@ mod tests {
         assert_eq!(config.m_mdl_at_multiplier, 10.0);
         assert_eq!(config.level_hold_seconds, 0.5);
         assert_eq!(config.level_debounce_seconds, 0.5);
+        assert!(!config.verbose_logging, "the release config is quiet");
         assert!(config.unknown.is_empty());
     }
 

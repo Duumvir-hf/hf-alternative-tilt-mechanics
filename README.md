@@ -3,7 +3,7 @@
 **HighFleet Steam 1.163** — the engines' hull stabiliser aims at a **wish tilt** you set with your
 own keys, instead of always at level. Q/E and every other flight control stay vanilla.
 
-Version **1.0.0** — MIT — [changelog](CHANGELOG.md) — [design notes and engine reference](docs/DESIGN.md)
+Version **1.0.1** — MIT — [changelog](CHANGELOG.md) — [design notes and engine reference](docs/DESIGN.md)
 
 ---
 
@@ -116,7 +116,7 @@ The nine numbers in `Libraries/OL.seria` (under `m_oid=…`), if you prefer the 
 | `m_mdl_at_multiplier` | `10.0` | see the section above; `1.0` = leave the game alone |
 | `level_hold_seconds` | `0.5` | how long both keys must be held to snap to level |
 | `level_debounce_seconds` | `0.5` | how long the keys are ignored after that |
-| `verbose_logging` | `true` | one `TILT` line per 0.5° of target movement |
+| `verbose_logging` | `false` | `true` = one `TILT` line per 0.5° of target movement (diagnostics) |
 
 Numbers are taken as written; a negative `degrees_per_second` just swaps the two keys, and a
 negative `m_mdl_at_multiplier` is ignored. Only a non-finite number falls back to its default.
