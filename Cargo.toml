@@ -1,0 +1,24 @@
+﻿[package]
+name = "hf-wish-tilt"
+version = "1.0.0"
+edition = "2021"
+description = "HighFleet (Steam 1.163): the wish keys move a persistent tilt target and the engine m_mdl_at stabiliser aims at it instead of at level."
+license = "MIT"
+repository = "https://github.com/Duumvir-hf/hf-alternative-tilt-mechanics"
+
+[lib]
+name = "hf_wish_tilt"
+crate-type = ["cdylib"]
+
+[dependencies]
+highfleet-mod-api = { git = "https://github.com/logdot/Highfleet-Modloader.git", tag = "v4.0.0" }
+log = "0.4.28"
+patchy = { package = "patchy-rs", git = "https://github.com/logdot/patchy-rs.git", tag = "v0.1.0" }
+serde = { version = "1.0.221", features = ["derive"] }
+serde_json = "1.0.144"
+windows-sys = { version = "0.61", features = [
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+    "Win32_UI_Input_KeyboardAndMouse",
+] }

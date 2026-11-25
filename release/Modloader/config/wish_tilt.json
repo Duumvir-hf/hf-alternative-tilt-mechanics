@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "degrees_per_second": 45.0,
+  "left_key": "Z",
+  "right_key": "X",
+  "invert": false,
+  "twr_reference": 3.0,
+  "twr_zero": 1.25,
+  "twr_exponent": 1.5,
+  "twr_min_degrees_per_second": 1.0,
+  "twr_max_degrees_per_second": 45.0,
+  "m_mdl_at_multiplier": 10.0,
+  "level_hold_seconds": 0.5,
+  "level_debounce_seconds": 0.5,
+  "verbose_logging": true
+}
